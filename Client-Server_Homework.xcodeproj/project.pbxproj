@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		50A88A3826823DA900330B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A88A3726823DA900330B10 /* AppDelegate.swift */; };
 		50A88A3A26823DA900330B10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A88A3926823DA900330B10 /* SceneDelegate.swift */; };
-		50A88A3C26823DA900330B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A88A3B26823DA900330B10 /* ViewController.swift */; };
+		50A88A3C26823DA900330B10 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A88A3B26823DA900330B10 /* AccountViewController.swift */; };
 		50A88A3F26823DA900330B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A88A3D26823DA900330B10 /* Main.storyboard */; };
 		50A88A4126823DAA00330B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A88A4026823DAA00330B10 /* Assets.xcassets */; };
 		50A88A4426823DAA00330B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A88A4226823DAA00330B10 /* LaunchScreen.storyboard */; };
+		50A88A4F2682469C00330B10 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A88A4E2682469C00330B10 /* SessionViewController.swift */; };
+		50A88A51268246DF00330B10 /* Sesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A88A50268246DF00330B10 /* Sesion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50A88A3426823DA900330B10 /* Client-Server_Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Client-Server_Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A88A3726823DA900330B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50A88A3926823DA900330B10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50A88A3B26823DA900330B10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50A88A3B26823DA900330B10 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		50A88A3E26823DA900330B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50A88A4026823DAA00330B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50A88A4326823DAA00330B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50A88A4526823DAA00330B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50A88A4E2682469C00330B10 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		50A88A50268246DF00330B10 /* Sesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sesion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		50A88A3626823DA900330B10 /* Client-Server_Homework */ = {
 			isa = PBXGroup;
 			children = (
+				50A88A4B2682423A00330B10 /* App */,
+				50A88A4D2682426B00330B10 /* Homework-1 */,
+				50A88A4C2682424F00330B10 /* Resources */,
+			);
+			path = "Client-Server_Homework";
+			sourceTree = "<group>";
+		};
+		50A88A4B2682423A00330B10 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				50A88A3726823DA900330B10 /* AppDelegate.swift */,
 				50A88A3926823DA900330B10 /* SceneDelegate.swift */,
-				50A88A3B26823DA900330B10 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		50A88A4C2682424F00330B10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				50A88A3D26823DA900330B10 /* Main.storyboard */,
 				50A88A4026823DAA00330B10 /* Assets.xcassets */,
 				50A88A4226823DAA00330B10 /* LaunchScreen.storyboard */,
 				50A88A4526823DAA00330B10 /* Info.plist */,
 			);
-			path = "Client-Server_Homework";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50A88A4D2682426B00330B10 /* Homework-1 */ = {
+			isa = PBXGroup;
+			children = (
+				50A88A3B26823DA900330B10 /* AccountViewController.swift */,
+				50A88A4E2682469C00330B10 /* SessionViewController.swift */,
+				50A88A50268246DF00330B10 /* Sesion.swift */,
+			);
+			path = "Homework-1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50A88A3C26823DA900330B10 /* ViewController.swift in Sources */,
+				50A88A3C26823DA900330B10 /* AccountViewController.swift in Sources */,
+				50A88A51268246DF00330B10 /* Sesion.swift in Sources */,
+				50A88A4F2682469C00330B10 /* SessionViewController.swift in Sources */,
 				50A88A3826823DA900330B10 /* AppDelegate.swift in Sources */,
 				50A88A3A26823DA900330B10 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU6FFLPFS6;
-				INFOPLIST_FILE = "Client-Server_Homework/Info.plist";
+				INFOPLIST_FILE = "Client-Server_Homework/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU6FFLPFS6;
-				INFOPLIST_FILE = "Client-Server_Homework/Info.plist";
+				INFOPLIST_FILE = "Client-Server_Homework/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
